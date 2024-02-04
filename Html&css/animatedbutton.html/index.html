@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>button</title>
+  </head>
+  <body>
+    <button>button</button>
+  </body>
+
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", (e) => {
+      e.target.classList.add("animate");
+      setTimeout(() => {
+        e.target.classList.remove("animate");
+      }, 4000);
+    });
+  </script>
+</html>
